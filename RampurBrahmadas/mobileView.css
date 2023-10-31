@@ -1,0 +1,89 @@
+
+.mobileview {
+    display: flex;
+    background-image:linear-gradient(to right,green,#86be1e, yellow, orange);
+    /* position: sticky; 
+    top: 0;*/
+  }
+  .mobileview a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 18px;
+    font-family: Georgia, Times New Roman , Times, serif;
+    line-height: 0.8em;
+  }
+  .mobileview a:hover {
+     /* background-color: #333; 
+     color: white; */
+         background-image:linear-gradient(to right,#ffc266, #d9f3a6,#b9e596, #b9cd96);
+         color: blue;
+         /* transition: all 0.4s ease-in; */
+        
+     }
+  
+  @media only screen and (min-width: 600px) {
+      .mobileview {
+        display: none;
+      }
+  }
+  @media (max-width: 600px) {
+    .mobileview {
+      flex-direction: column;
+    }
+    .overflow_hidden{
+      flex-direction: column;
+    }
+  }
+  
+
+   .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0; 
+     background-color: rgb(43, 243, 17);
+    background-color: rgba(43, 243, 17, 0.9);
+   /* background-image:linear-gradient(to right,rgba(94, 219, 94), white, yellow);
+    /* opacity: 0.9; */
+     overflow-x: hidden;
+    transition: 0.5s; 
+  }
+  
+   .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+   color:  #f1f1f1; 
+/* color: #000; */
+    display: block;
+    transition: 0.3s;
+  }
+  .closebtn{
+    color: #000;
+   
+  } */
+
+  
+  .overlay a:hover, .overlay a:focus {
+    /* color: #f1f1f1; */
+    color: blue;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    font-size: 3.5rem;
+  }
